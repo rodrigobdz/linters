@@ -8,19 +8,23 @@ Supported languages / file types:
 - Shell
 - JSON
 - YML
-- (Coming soon) Python
+- Python
 
 ## Requirements
 
-- Install required tools.
+- Install `pre-commit` (linter manager)
 
   ```sh
-  sudo ./script/boostrap-ubuntu
+  brew install pre-commit
   ```
 
-- Adapt configuration files to project
+- Install linters
 
-- Create GitHub label called `dependencies 📦` for dependabot
+  ```sh
+  pre-commit install --force
+  ```
+
+- Adapt configuration files (dotfiles) to project
 
 ## Usage
 
@@ -28,10 +32,4 @@ Supported languages / file types:
 
   ```sh
   ./script/format
-  ```
-
-- Test if code is linted
-
-  ```sh
-  ./script/test
   ```

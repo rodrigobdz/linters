@@ -6,9 +6,4 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-# Shell scripts
-npm run format-sh {**/*.sh,script/**}
-
-# Multiple formats
-npm run format-code ./**/*.{json,yml}
-npm run format-code ./**/*.md
+pre-commit run --all-files --show-diff-on-failure
