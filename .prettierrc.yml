@@ -10,3 +10,9 @@ arrowParens: avoid
 htmlWhitespaceSensitivity: css
 endOfLine: auto
 quoteProps: as-needed
+overrides:
+  - files:
+      - "*.yml"
+      - "*.yaml"
+    options:
+      bracketSpacing: false
