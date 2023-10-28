@@ -10,7 +10,6 @@ repos:
       - id: check-toml
       - id: debug-statements
       - id: check-merge-conflict
-      - id: check-shebang-scripts-are-executable
       - id: check-executables-have-shebangs
       - id: check-case-conflict
       - id: detect-private-key
@@ -42,7 +41,7 @@ repos:
         language: system
         types: [shell]
         require_serial: true
-        args: ['-i', '2', '-w']
+        args: ["-i", "2", "-w"]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.31.1
@@ -72,10 +71,10 @@ repos:
       - id: pydocstyle
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 'v0.961'
+    rev: "v0.961"
     hooks:
       - id: mypy
-        exclude: 'experiments'
+        exclude: "experiments"
 
   # https://stackoverflow.com/a/61238571
   - repo: local
@@ -86,7 +85,7 @@ repos:
         language: system
         types: [python]
         require_serial: true
-        args: ['--rcfile=.pylintrc']
+        args: ["--rcfile=.pylintrc"]
 
   - repo: https://github.com/asottile/setup-cfg-fmt
     rev: v1.20.1
