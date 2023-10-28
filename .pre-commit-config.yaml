@@ -20,6 +20,11 @@ repos:
     hooks:
       - id: hadolint
 
+  - repo: https://github.com/gruntwork-io/pre-commit
+    rev: v0.1.22
+    hooks:
+      - id: helmlint
+
   - repo: local
     hooks:
       - id: shfmt
