@@ -4,15 +4,18 @@
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.tabSize": 2,
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
-  "yaml.format.singleQuote": false,
-  "prettier.singleQuote": true,
-  "prettier.jsxSingleQuote": true,
-  "html.format.endWithNewline": true,
   "files.trimTrailingWhitespace": true,
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   // Syntax highlighting
   "files.associations": {
